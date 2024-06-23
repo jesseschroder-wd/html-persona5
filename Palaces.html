@@ -1,0 +1,132 @@
+<!-- 
+    Author:         Jesse Schröder
+    Date:           19-09-2022
+    Description:    Eindopdracht Webs1
+-->
+<!DOCTYPE html>
+
+<html>
+
+    <head>
+       <meta charset="UTF-8">
+       <meta name="viewport" content="width=device-width, initial-scale=1.0">
+       <link href="src/style/style.css" rel="stylesheet" type="text/css">
+       <link href="src/style/basis.css" rel="stylesheet" type="text/css">
+       <script src="https://kit.fontawesome.com/5a6df5a6e9.js" crossorigin="anonymous"></script>
+       <title>Title</title>
+    </head>
+
+    <body>
+        <!-----  | Header |  ----->
+        <!-- Header banner -->
+        <img src="src/img/header-bg.png" alt="Header" class="w100 headerBanner">
+        <!-- Menu & Logo -->
+        <div class="menuLogo pFixed">
+            <label for="show">
+                <img src="src/img/menu_btn.png" alt="Menu" class="menu pointer">
+            </label>
+            <a href="index.html"><img src="src/img/logo.png" alt="Main Logo" class="logo pointer"></a>
+        </div>
+        <!-----  | Navigation |  ----->
+        <!-- Click -->
+        <input class="dNone" type="checkbox" id="show">
+        <!-- Menu & Invisible window container -->
+        <nav class="pFixed h100 w100 dFlex">
+            <!-- Menu -->
+            <ul class="mar0">
+                <li><a href="index.html" class="left">Home</a></li>
+                <li><a href="Story.html" class="left">Story</a></li>
+                <li><a href="Confidants.html" class="left">Confidants</a></li>
+                <li><a href="Palaces.html" class="left">Palaces</a></li>
+                <li><a href="Tokyo.html" class="left">Tokyo</a></li>
+                <li><a href="Contact.html" class="left">Contact</a></li>
+            </ul>
+            <!-- Menu close button -->
+            <label for="show">
+                <i class="fa-solid fa-xmark fa-3x pFixed"></i>
+            </label>
+            <!-- Invisible window -->
+            <label for="show" class="invisibleWindow pm0 w100 h100 pointer"></label>
+        </nav>
+        <!-----  | Structure |  ----->
+        <!-- Top of page button -->
+        <a href="#"><i class="fa-solid fa-circle-up fa-3x pFixed"></i></a>
+        <!-- Section Confidants -->
+        <section class="sectionColorB sectionTop">
+            <h1>Palaces</h1>
+            <!-- Palaces & Bosses -->
+            <div class="palaceGroup dFlex">
+                <div class="palaceContainer w100 taCenter" id="SuKa">
+                    <input type="checkbox" id="ShowKamoshida" class="dNone">
+                    <img src="src/img/KamoshidaBoss.jpg" class="boss">
+                    <label for="ShowKamoshida">
+                        <img src="src/img/KamoshidaPalace.png" class="palace">
+                    </label>
+                    <h2>Suguru Kamoshida</h2>
+                    <p>
+                        Morbi non nunc purus. Aliquam malesuada maximus erat at posuere. Suspendisse velit nibh, scelerisque nec blandit id, condimentum sit amet nunc. Etiam venenatis tristique tincidunt. Interdum et malesuada fames ac ante ipsum primis in faucibus. Nunc ac nisl consectetur, hendrerit augue eget, pharetra felis. Maecenas fermentum mauris nec turpis accumsan placerat. Proin aliquam congue tellus in bibendum. Sed lacinia nunc et elementum eleifend. Mauris varius nulla nunc, quis hendrerit ante egestas non. In eget arcu ac erat maximus congue ac id tellus. Maecenas arcu lectus, sagittis sed tortor at, suscipit semper dui. Aliquam erat volutpat. Nunc viverra, orci sed fermentum cursus, turpis erat mattis nibh, nec accumsan elit nisl ut velit. Quisque vitae pharetra urna. Duis ut lacus justo.
+                    </p>
+                </div>
+                <div class="palaceContainer w100 taCenter" id="Sani">
+                    <input type="checkbox" id="ShowNiijima" class="dNone">
+                    <img src="src/img/NiijimaBoss.jpg" class="boss">
+                    <label for="ShowNiijima">
+                        <img src="src/img/NiijimaPalace.webp" class="palace">
+                    </label>
+                    <h2>Sae Niijima</h2>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer quis odio eleifend, fringilla erat a, iaculis ipsum. Maecenas euismod elit sit amet varius tristique. Nullam metus nisi, venenatis non ipsum consequat, porta interdum lectus. Pellentesque molestie justo nibh. Vivamus luctus erat vitae nisl mattis vulputate. Cras vitae magna et lorem tincidunt pulvinar. Nulla eu egestas nulla. Nulla rhoncus est et augue dignissim euismod.
+                    </p>
+                </div>
+            </div>
+            <div class="palaceGroup dFlex" id="MaSh">
+                <div class="palaceContainer w100 taCenter">
+                    <input type="checkbox" id="ShowShido" class="dNone">
+                    <img src="src/img/ShidoBoss.jpg" class="boss">
+                    <label for="ShowShido">
+                        <img src="src/img/ShidoPalace.jpg" class="palace">
+                    </label>
+                    <h2>Masayoshi Shido</h2>
+                    <p>
+                        Vivamus at orci sed orci semper pellentesque quis non tortor. Vestibulum sem odio, dapibus id diam sit amet, dictum auctor quam. Praesent maximus enim ac nulla semper vehicula. Donec tempus convallis orci vitae vulputate. Ut a suscipit orci. Cras iaculis ante non euismod efficitur. Suspendisse feugiat arcu vel risus fringilla, at posuere nunc suscipit. Ut tincidunt purus sit amet elit sagittis hendrerit. Duis condimentum, augue quis rutrum bibendum, ex tellus facilisis est, ac interdum dolor neque sagittis lacus. Praesent sollicitudin risus eu quam rutrum, id pharetra magna accumsan. Duis in diam lacinia lorem euismod interdum. Nulla condimentum erat ac molestie rutrum. Vivamus magna dolor, lobortis accumsan bibendum in, porttitor vitae neque. Donec malesuada leo id maximus efficitur. Morbi ut efficitur velit. Nunc tempus ipsum condimentum ultrices imperdiet.
+                    </p>
+                </div>
+                <div class="palaceContainer w100 taCenter" id="TaMu">
+                    <input type="checkbox" id="ShowMaruki" class="dNone">
+                    <img src="src/img/MarukiBoss.jpg" class="boss">
+                    <label for="ShowMaruki">
+                        <img src="src/img/MarukiPalace.png" class="palace">
+                    </label>
+                    <h2>Takuto Maruki</h2>
+                    <p>
+                        Donec finibus porta tortor, gravida ultrices nulla dapibus consectetur. Pellentesque porttitor massa eget odio egestas, non sollicitudin leo sodales. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Pellentesque commodo eros sit amet sem ullamcorper, vitae bibendum erat dictum. Duis mattis ligula tincidunt magna tincidunt, vel vehicula mi rutrum. Etiam fermentum molestie suscipit. Duis faucibus fringilla leo in faucibus. Interdum et malesuada fames ac ante ipsum primis in faucibus. Phasellus lacinia leo a augue mattis fermentum. Aenean eget mauris ut velit consequat accumsan. Sed accumsan nibh rhoncus, mattis dui sit amet, condimentum mauris. Cras non nisl lacinia diam porta posuere id quis turpis. Quisque eget neque ullamcorper, bibendum purus eget, placerat orci. Morbi dapibus vulputate erat. Donec et ullamcorper felis, in consectetur felis. Nulla efficitur dignissim ante, sit amet consectetur tortor pharetra sit amet.
+                    </p>
+                </div>
+            </div>
+        </section>
+        <!-----  | Footer |  ----->
+        <footer class="dFlex">
+            <!-- Support email -->
+            <div>
+                <p class="mar0 bold">
+                    Support email
+                </p>
+                <p class="mar0">
+                    p5rguide_support@gmail.com
+                </p>
+            </div>
+            <!-- Social media -->
+            <div>
+                <p class="mar0 bold">Follow us</p>
+                <div>
+                    <i class="fa-brands fa-discord fa-2x"></i>
+                    <i class="fa-brands fa-twitter fa-2x"></i>
+                    <i class="fa-brands fa-instagram fa-2x"></i>
+                    <i class="fa-brands fa-reddit-alien fa-2x"></i>
+                    <i class="fa-brands fa-patreon fa-2x"></i>
+                </div>
+            </div>
+        </footer>
+    </body>
+
+</html>

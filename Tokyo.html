@@ -1,0 +1,185 @@
+<!-- 
+    Author:         Jesse Schröder
+    Date:           19-09-2022
+    Description:    Eindopdracht Webs1
+-->
+<!DOCTYPE html>
+
+<html>
+
+    <head>
+       <meta charset="UTF-8">
+       <meta name="viewport" content="width=device-width, initial-scale=1.0">
+       <link href="src/style/style.css" rel="stylesheet" type="text/css">
+       <link href="src/style/basis.css" rel="stylesheet" type="text/css">
+       <script src="https://kit.fontawesome.com/5a6df5a6e9.js" crossorigin="anonymous"></script>
+       <title>Title</title>
+    </head>
+
+    <body>
+        <!-----  | Header |  ----->
+        <!-- Header banner -->
+        <img src="src/img/header-bg.png" alt="Header" class="w100 headerBanner">
+        <!-- Menu & Logo -->
+        <div class="menuLogo pFixed">
+            <label for="show">
+                <img src="src/img/menu_btn.png" alt="Menu" class="menu pointer">
+            </label>
+            <a href="index.html"><img src="src/img/logo.png" alt="Main Logo" class="logo pointer"></a>
+        </div>
+        <!-----  | Navigation |  ----->
+        <!-- Click -->
+        <input class="dNone" type="checkbox" id="show">
+        <!-- Menu & Invisible window container -->
+        <nav class="pFixed h100 w100 dFlex">
+            <!-- Menu -->
+            <ul class="mar0">
+                <li><a href="index.html" class="left">Home</a></li>
+                <li><a href="Story.html" class="left">Story</a></li>
+                <li><a href="Confidants.html" class="left">Confidants</a></li>
+                <li><a href="Palaces.html" class="left">Palaces</a></li>
+                <li><a href="Tokyo.html" class="left">Tokyo</a></li>
+                <li><a href="Contact.html" class="left">Contact</a></li>
+            </ul>
+            <!-- Menu close button -->
+            <label for="show">
+                <i class="fa-solid fa-xmark fa-3x pFixed"></i>
+            </label>
+            <!-- Invisible window -->
+            <label for="show" class="invisibleWindow pm0 w100 h100 pointer"></label>
+        </nav>
+        <!-----  | Structure |  ----->
+        <!-- Top of page button -->
+        <a href="#"><i class="fa-solid fa-circle-up fa-3x pFixed"></i></a>
+        <!-- Section Tokyo -->
+        <section class="sectionColorB sectionTop">
+            <h1>Tokyo</h1>
+            <!-- Map viewer -->
+            <iframe title="Persona 5 Royal ~ Map" class="w100 mapViewer" src="https://sketchfab.com/models/a8fd2793e583446e9509cf65f350fb9d/embed?autostart=1"></iframe>
+            <!-- Tokyo places -->
+            <article class="dFlex sectionTop">
+                <aside class="w100">
+                    <img src="src/img/ShibuyaOne.jpg" alt="Shibuya" class="tokyoImages w100">
+                    <img src="src/img/ShibuyaTwo.jpg" alt="Shibuya" class="tokyoImages w100">
+                </aside>
+                <aside class="w100">
+                    <h3 id="Shibuya">
+                        Shibuya
+                    </h3>
+                    <p>
+                        Suspendisse pretium erat nec porttitor consectetur. Sed vehicula, ex id malesuada commodo, ante enim sollicitudin augue, eget ullamcorper velit metus eu eros. Pellentesque ullamcorper lectus non volutpat venenatis. Vivamus ac nisl suscipit erat tempor ullamcorper. Aliquam finibus eleifend justo nec rutrum. Nulla luctus ipsum et maximus suscipit. Mauris efficitur condimentum nibh ut dictum. Donec ac egestas velit. Pellentesque euismod volutpat eros vel auctor.
+                    </p>
+                    <p>
+                        Nullam congue elit in ligula interdum fringilla vel quis arcu. Morbi sagittis augue ac pulvinar cursus. Mauris mattis feugiat sapien in rutrum. Quisque viverra, erat a auctor pretium, nisi massa blandit massa, ac pulvinar odio massa eget nunc. Praesent ac mauris dapibus, bibendum lacus at, faucibus turpis. Duis feugiat arcu mauris, quis viverra leo auctor eu. Morbi mattis fermentum risus, non posuere massa volutpat non. Praesent vestibulum pharetra eros eu laoreet. Aliquam imperdiet vehicula lorem tincidunt convallis.
+                    </p>
+                </aside>
+            </article>
+            <article class="dFlex">
+                <aside class="w100">
+                    <h3 id="Shinjuku">
+                        Shinjuku
+                    </h3>
+                    <p>
+                        Suspendisse pretium erat nec porttitor consectetur. Sed vehicula, ex id malesuada commodo, ante enim sollicitudin augue, eget ullamcorper velit metus eu eros. Pellentesque ullamcorper lectus non volutpat venenatis. Vivamus ac nisl suscipit erat tempor ullamcorper. Aliquam finibus eleifend justo nec rutrum. Nulla luctus ipsum et maximus suscipit. Mauris efficitur condimentum nibh ut dictum. Donec ac egestas velit. Pellentesque euismod volutpat eros vel auctor.
+                    </p>
+                </aside>
+                <aside class="w100">
+                    <img src="src/img/ShinjukuOne.jpg" alt="Shibuya" class="tokyoImages w100">
+                    <img src="src/img/ShinjukuTwo.jpg" alt="Shibuya" class="tokyoImages w100">
+                </aside>
+            </article>
+            <article class="dFlex dNone">
+                <aside class="w100">
+                    <img src="src/img/ShinjukuOne.jpg" alt="Shibuya" class="tokyoImages w100">
+                    <img src="src/img/ShinjukuTwo.jpg" alt="Shibuya" class="tokyoImages w100">
+                </aside>
+                <aside class="w100">
+                    <h3 id="Shinjuku">
+                        Shinjuku
+                    </h3>
+                    <p>
+                        Suspendisse pretium erat nec porttitor consectetur. Sed vehicula, ex id malesuada commodo, ante enim sollicitudin augue, eget ullamcorper velit metus eu eros. Pellentesque ullamcorper lectus non volutpat venenatis. Vivamus ac nisl suscipit erat tempor ullamcorper. Aliquam finibus eleifend justo nec rutrum. Nulla luctus ipsum et maximus suscipit. Mauris efficitur condimentum nibh ut dictum. Donec ac egestas velit. Pellentesque euismod volutpat eros vel auctor.
+                    </p>
+                </aside>
+            </article>
+            <article class="dFlex">
+                <aside class="w100">
+                    <img src="src/img/AkihabaraOne.jpg" alt="Shibuya" class="tokyoImages w100">
+                    <img src="src/img/AkihabaraTwo.jpg" alt="Shibuya" class="tokyoImages w100">
+                </aside>
+                <aside class="w100">
+                    <h3 id="Akihabara">
+                        Akihabara
+                    </h3>
+                    <p>
+                        Suspendisse pretium erat nec porttitor consectetur. Sed vehicula, ex id malesuada commodo, ante enim sollicitudin augue, eget ullamcorper velit metus eu eros. Pellentesque ullamcorper lectus non volutpat venenatis. Vivamus ac nisl suscipit erat tempor ullamcorper. Aliquam finibus eleifend justo nec rutrum. Nulla luctus ipsum et maximus suscipit. Mauris efficitur condimentum nibh ut dictum. Donec ac egestas velit. Pellentesque euismod volutpat eros vel auctor.
+                    </p>
+                    <p>
+                        Pellentesque at tellus consequat, porta lorem non, tempus est. Etiam pharetra dictum varius. Aliquam laoreet ex quis purus ornare ornare. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Aliquam rhoncus tristique est, sit amet interdum dolor convallis ac. Cras semper, augue id convallis pellentesque, velit enim posuere ex, sed rhoncus eros metus cursus nulla. Mauris ut urna eget dui dignissim eleifend. Vestibulum rhoncus, metus quis feugiat sagittis, ante libero dapibus lorem, vitae luctus quam nunc nec augue.
+                    </p>
+                    <p>
+                        Nullam congue elit in ligula interdum fringilla vel quis arcu. Morbi sagittis augue ac pulvinar cursus. Mauris mattis feugiat sapien in rutrum. Quisque viverra, erat a auctor pretium, nisi massa blandit massa, ac pulvinar odio massa eget nunc. Praesent ac mauris dapibus, bibendum lacus at, faucibus turpis. Duis feugiat arcu mauris, quis viverra leo auctor eu. Morbi mattis fermentum risus, non posuere massa volutpat non. Praesent vestibulum pharetra eros eu laoreet. Aliquam imperdiet vehicula lorem tincidunt convallis.
+                    </p>
+                </aside>
+            </article>
+            <article class="dFlex">
+                <aside class="w100">
+                    <h3 id="Kichijoji">
+                        Kichijoji
+                    </h3>
+                    <p>
+                        Suspendisse pretium erat nec porttitor consectetur. Sed vehicula, ex id malesuada commodo, ante enim sollicitudin augue, eget ullamcorper velit metus eu eros. Pellentesque ullamcorper lectus non volutpat venenatis. Vivamus ac nisl suscipit erat tempor ullamcorper. Aliquam finibus eleifend justo nec rutrum. Nulla luctus ipsum et maximus suscipit. Mauris efficitur condimentum nibh ut dictum. Donec ac egestas velit. Pellentesque euismod volutpat eros vel auctor.
+                    </p>
+                    <p>
+                        Nullam congue elit in ligula interdum fringilla vel quis arcu. Morbi sagittis augue ac pulvinar cursus. Mauris mattis feugiat sapien in rutrum. Quisque viverra, erat a auctor pretium, nisi massa blandit massa, ac pulvinar odio massa eget nunc. Praesent ac mauris dapibus, bibendum lacus at, faucibus turpis. Duis feugiat arcu mauris, quis viverra leo auctor eu. Morbi mattis fermentum risus, non posuere massa volutpat non. Praesent vestibulum pharetra eros eu laoreet. Aliquam imperdiet vehicula lorem tincidunt convallis.
+                    </p>
+                </aside>
+                <aside class="w100">
+                    <img src="src/img/KichiJojiOne.jpg" alt="Shibuya" class="tokyoImages w100">
+                    <img src="src/img/KichijojiTwo.jpg" alt="Shibuya" class="tokyoImages w100">
+                </aside>
+            </article>
+            <article class="dFlex dNone">
+                <aside class="w100">
+                    <img src="src/img/KichiJojiOne.jpg" alt="Shibuya" class="tokyoImages w100">
+                    <img src="src/img/KichijojiTwo.jpg" alt="Shibuya" class="tokyoImages w100">
+                </aside>
+                <aside class="w100">
+                    <h3 id="Kichijoji">
+                        Kichijoji
+                    </h3>
+                    <p>
+                        Suspendisse pretium erat nec porttitor consectetur. Sed vehicula, ex id malesuada commodo, ante enim sollicitudin augue, eget ullamcorper velit metus eu eros. Pellentesque ullamcorper lectus non volutpat venenatis. Vivamus ac nisl suscipit erat tempor ullamcorper. Aliquam finibus eleifend justo nec rutrum. Nulla luctus ipsum et maximus suscipit. Mauris efficitur condimentum nibh ut dictum. Donec ac egestas velit. Pellentesque euismod volutpat eros vel auctor.
+                    </p>
+                    <p>
+                        Nullam congue elit in ligula interdum fringilla vel quis arcu. Morbi sagittis augue ac pulvinar cursus. Mauris mattis feugiat sapien in rutrum. Quisque viverra, erat a auctor pretium, nisi massa blandit massa, ac pulvinar odio massa eget nunc. Praesent ac mauris dapibus, bibendum lacus at, faucibus turpis. Duis feugiat arcu mauris, quis viverra leo auctor eu. Morbi mattis fermentum risus, non posuere massa volutpat non. Praesent vestibulum pharetra eros eu laoreet. Aliquam imperdiet vehicula lorem tincidunt convallis.
+                    </p>
+                </aside>
+            </article>
+        </section>
+        <!-----  | Footer |  ----->
+        <footer class="dFlex">
+            <!-- Support email -->
+            <div>
+                <p class="mar0 bold">
+                    Support email
+                </p>
+                <p class="mar0">
+                    p5rguide_support@gmail.com
+                </p>
+            </div>
+            <!-- Social media -->
+            <div>
+                <p class="mar0 bold">Follow us</p>
+                <div>
+                   <i class="fa-brands fa-discord fa-2x"></i>
+                   <i class="fa-brands fa-twitter fa-2x"></i>
+                   <i class="fa-brands fa-instagram fa-2x"></i>
+                   <i class="fa-brands fa-reddit-alien fa-2x"></i>
+                   <i class="fa-brands fa-patreon fa-2x"></i>
+                </div>
+            </div>
+        </footer>
+    </body>
+
+</html>

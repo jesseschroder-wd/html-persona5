@@ -1,0 +1,319 @@
+<!-- 
+    Author:         Jesse Schröder
+    Date:           19-09-2022
+    Description:    Eindopdracht Webs1
+-->
+<!DOCTYPE html>
+
+<html>
+
+    <head>
+       <meta charset="UTF-8">
+       <meta name="viewport" content="width=device-width, initial-scale=1.0">
+       <link href="src/style/style.css" rel="stylesheet" type="text/css">
+       <link href="src/style/basis.css" rel="stylesheet" type="text/css">
+       <script src="https://kit.fontawesome.com/5a6df5a6e9.js" crossorigin="anonymous"></script>
+       <title>Title</title>
+    </head>
+
+    <body>
+        <!-----  | Header |  ----->
+        <!-- Header banner -->
+        <img src="src/img/header-bg.png" alt="Header" class="w100 headerBanner">
+        <!-- Menu & Logo -->
+        <div class="menuLogo pFixed">
+            <label for="show">
+                <img src="src/img/menu_btn.png" alt="Menu" class="menu pointer">
+            </label>
+            <a href="index.html"><img src="src/img/logo.png" alt="Main Logo" class="logo pointer"></a>
+        </div>
+        <!-----  | Navigation |  ----->
+        <!-- Click -->
+        <input class="dNone" type="checkbox" id="show">
+        <!-- Menu & Invisible window container -->
+        <nav class="pFixed h100 w100 dFlex">
+            <!-- Menu -->
+            <ul class="mar0">
+                <li><a href="index.html" class="left">Home</a></li>
+                <li><a href="Story.html" class="left">Story</a></li>
+                <li><a href="Confidants.html" class="left">Confidants</a></li>
+                <li><a href="Palaces.html" class="left">Palaces</a></li>
+                <li><a href="Tokyo.html" class="left">Tokyo</a></li>
+                <li><a href="Contact.html" class="left">Contact</a></li>
+            </ul>
+            <!-- Menu close button -->
+            <label for="show">
+                <i class="fa-solid fa-xmark fa-3x pFixed"></i>
+            </label>
+            <!-- Invisible window -->
+            <label for="show" class="invisibleWindow pm0 w100 h100 pointer"></label>
+        </nav>
+        <!-----  | Structure |  ----->
+        <!-- Top of page button -->
+        <a href="#"><i class="fa-solid fa-circle-up fa-3x pFixed"></i></a>
+        <!-- Section Confidants -->
+        <section class="sectionColorB confidantNav sectionTop">
+            <h1>Confidants</h1>
+            <!-- Cards -->
+            <div class="dFlex cardGroup">
+                <a href="#KaYo" class="card boxS">
+                    <img src="src/img/Faith-Card.jpg" alt="Avatar" class="w100">
+                    <div class="cardContainer">
+                    <h4>Kasumi Yoshizawa</h4> 
+                    </div>
+                </a>
+                <a href="#GoAk" class="card boxS">
+                    <img src="src/img/Justice-Card.jpg" alt="Avatar" class="w100">
+                    <div class="cardContainer">
+                    <h4>Goro Akechi</h4> 
+                    </div>
+                </a>
+                <a href="#RySa" class="card boxS">
+                    <img src="src/img/Chariot-Card.jpg" alt="Avatar" class="w100">
+                    <div class="cardContainer">
+                    <h4>Ryuji Sakamoto</h4> 
+                    </div>
+                </a>
+                <a href="#MaNi" class="card boxS">
+                    <img src="src/img/Priestess-Card.jpg" alt="Avatar" class="w100">
+                    <div class="cardContainer">
+                    <h4>Makoto Niijima</h4> 
+                    </div>
+                </a>
+                <a href="#TaMa"class="card boxS">
+                    <img src="src/img/Councillor-Card.jpg" alt="Avatar" class="w100">
+                    <div class="cardContainer">
+                    <h4>Takuto Maruji</h4> 
+                    </div>
+                </a>
+                <a href="#SoSa" class="card boxS">
+                    <img src="src/img/Hierophant-Card.jpg" alt="Avatar" class="w100">
+                    <div class="cardContainer">
+                    <h4>Sojiro Sakura</h4> 
+                    </div>
+                </a>
+            </div>
+        </section>
+        <!-- Section Responses -->
+        <section class="sectionColorB responses">
+            <h1 id="KaYo">Kasumi Yoshizawa</h1>
+            <table>
+                <tr>
+                    <td class="c100"><span class="bold">Response 1</span></td>
+                    <td>We’re just getting started. <span class="cRed">+2</span></td>
+                    <td>Go easy on me. +0</td>
+                    <td>I’m so done with this. <span class="cRed">+2&nbsp;</span></td>
+                </tr>
+                <tr>
+                    <td class="c100"><span class="bold">Response 2</span></td>
+                    <td>Next time, then. <span class="cRed">+2</span></td>
+                    <td>You doing okay? +0</td>
+                    <td>Lucky for me… +0</td>
+                </tr>
+                <tr>
+                    <td class="c100"><span class="bold">Response 3</span></td>
+                    <td>I see. +0</td>
+                    <td>So now…? +0</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="c100"><span class="bold">Response 4</span></td>
+                    <td>No problem. +0</td>
+                    <td>You sure? +0</td>
+                    <td>Uh, romantically? +0</td>
+                </tr>
+                <tr>
+                    <td class="c100"><span class="bold">Response 5</span></td>
+                    <td>Leave it to me. +0</td>
+                    <td>Let’s give it a try. +0</td>
+                    <td>Then follow my lead. +0</td>
+                </tr>
+                <tr>
+                    <td class="c100"><em><span>Followup</span></em></td>
+                    <td>Impressive. <span class="cRed">+2</span></td>
+                    <td>Gotta push through it. +0</td>
+                    <td>You did eat eventually, right? +0</td>
+                </tr>
+            </table>
+            <h1 id="GoAk">Goro Akechi</h1>
+            <table>
+                <tr>
+                    <td class="c100"><span class="bold">Response 1</span></td>
+                    <td>You always seem so busy. <span class="cRed">+2</span></td>
+                    <td>Do you have no friends? +0</td>
+                </tr>
+                <tr>
+                    <td class="c100"><span class="bold">Response 2</span></td>
+                    <td>Is that your win? +0</td>
+                    <td>Not bad. +0</td>
+                </tr>
+                <tr>
+                    <td class="c100"><span class="bold">Response 3</span></td>
+                    <td>Shoot very carefully. +2</td>
+                    <td>I’ll go for a power shot. +2</td>
+                </tr>
+                <tr>
+                    <td class="c100"><span class="bold">Response 4</span></td>
+                    <td>You used your right hand. +0</td>
+                    <td>…Aren’t you left-handed? +0</td>
+                </tr>
+                <tr>
+                    <td><span class="bold">Response 5</span></td>
+                    <td>Maybe i’ll be a detective. +2</td>
+                    <td>No holding back next time. +2</td>
+                    <td>I see a lot of things. <span class="cRed">+3</span></td>
+                </tr>
+                <tr>
+                    <td><span class="bold"><em>Followup</em></span></td>
+                    <td>Sure. +0</td>
+                    <td>I’ll think about it. +0</td>
+                    <td>As rivals? <span class="cRed">+2</span></td>
+                </tr>
+            </table>
+            <h1 id="RySa">Ryuji Sakamoto</h1>
+            <table>
+                <tr>
+                    <td  class="c100"><span class="bold">Response 1</span></td>
+                    <td>Let’s stay here. +2</td>
+                    <td>How about Protein Lovers? +2</td>
+                    <td>We can train at my place. <span class="cRed">+3</span></td>
+                </tr>
+                <tr>
+                    <td  class="c100"><span class="bold">Response 2</span></td>
+                    <td>You guys should trust Nakaoka. +3</td>
+                    <td>This is no time for arguing. +3</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td  class="c100"><span class="bold">Response 3</span></td>
+                    <td>Absolutely. <span class="cRed">+3</span></td>
+                    <td>More or less.<span class="cRed"> +3</span></td>
+                    <td>Not in the slightest. +0</td>
+                </tr>
+                <tr>
+                    <td  class="c100"><span class="bold">Response 4</span></td>
+                    <td>I don’t get it. +0</td>
+                    <td>Can you explain that? +0</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td  class="c100"><span class="bold">Response 5</span></td>
+                    <td>…Huh? +0</td>
+                    <td>I really don’t understand. +0</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><em><span class="bold">Followup</span></em></td>
+                    <td>Sounds like you two were close. +0</td>
+                    <td>Just like you.</td>
+                    <td>So he should’ve punched back? <span class="cRed">+2</span></td>
+                </tr>
+            </table>
+            <h1 id="MaNi">Makoto Niijima</h1>
+            <table>
+                <tr>
+                    <td  class="c100"><span class="bold">Response 1</span></td>
+                    <td>That’s unlike you. <span class="cRed">+2</span></td>
+                    <td>Is Thieves work distracting you? +0</td>
+                    <td>I’m sure you did better than me. +0</td>
+                </tr>
+                <tr>
+                    <td  class="c100"><span class="bold">Response 2</span></td>
+                    <td>Eiko? +0</td>
+                    <td>…Who? +0</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td  class="c100"><span class="bold">Response 3</span></td>
+                    <td>Don’t you have goals? +0</td>
+                    <td>What about college? +0</td>
+                    <td>What do you mean? +0</td>
+                </tr>
+                <tr>
+                    <td  class="c100"><span class="bold">Response 4</span></td>
+                    <td>Why do you use it? <span class="cRed">+3</span></td>
+                    <td>That’s adorable. +2</td>
+                    <td>You’re not very ladylike… +0</td>
+                </tr>
+                <tr>
+                    <td  class="c100"><span class="bold">Response 5</span></td>
+                    <td>Do you still want to pursue it? +0</td>
+                    <td>I like a woman in uniform. +2</td>
+                    <td>It’s an amazing goal. <span class="cRed">+3</span></td>
+                </tr>
+            </table>
+            <h1 id="TaMa">Takuto Maruki</h1>
+            <table>
+                <tr>
+                    <td class="c100"><span class="bold">Response 1</span></td>
+                    <td>Didn’t have much choice. +0</td>
+                    <td>We made a deal. <span class="cRed">+2</span></td>
+                    <td>I’m a little nervous. <span class="cRed">+2</span></td>
+                </tr>
+                <tr>
+                    <td class="c100"><span class="bold">Response 2</span></td>
+                    <td>It’s in the past. +0</td>
+                    <td>I’m doing okay now. +0</td>
+                    <td>So much for privacy. +0</td>
+                </tr>
+                <tr>
+                    <td class="c100"><span class="bold">Response 3</span></td>
+                    <td>But it sounds right. <span class="cRed">+3</span></td>
+                    <td>Yep. +2</td>
+                    <td>Kinda creeping me out here. +0</td>
+                </tr>
+                <tr>
+                    <td class="c100"><span class="bold">Response 4</span></td>
+                    <td>So… what? +0</td>
+                    <td>I’ll need more details. +0</td>
+                    <td>Uh… +0</td>
+                </tr>
+                <tr>
+                    <td class="c100"><span class="bold">Response 5</span></td>
+                    <td>Well, okay. <span class="cRed">+2</span></td>
+                    <td>etter make it worth it. +0</td>
+                    <td>Why me, though? +0</td>
+                </tr>
+            </table>
+            <h1 id="SoSa">Sojiro Sakura</h1>
+            <table>
+                <tr>
+                    <td class="c100"><span class="bold">Response 1</span></td>
+                    <td>You want my suggestion? +2</td>
+                    <td>Something with curry. <span class="cRed">+3</span></td>
+                    <td>I can’t decide! +0 <span class="cRed">+2&nbsp;</span></td>
+                </tr>
+                <tr>
+                    <td class="c100"><span class="bold">Response 2</span></td>
+                    <td>I didn’t do anything wrong. +0 <span class="cRed">+2</span></td>
+                    <td>I was just protecting Futaba. <span class="cRed">+3</span></td>
+                    <td>Sorry. +0</td>
+                </tr>
+            </table>
+        </section>
+        <!-----  | Footer |  ----->
+        <footer class="dFlex">
+            <!-- Support email -->
+            <div>
+                <p class="mar0 bold">
+                    Support email
+                </p>
+                <p class="mar0">
+                    p5rguide_support@gmail.com
+                </p>
+            </div>
+            <!-- Social media -->
+            <div>
+                <p class="mar0 bold">Follow us</p>
+                <div>
+                    <i class="fa-brands fa-discord fa-2x"></i>
+                    <i class="fa-brands fa-twitter fa-2x"></i>
+                    <i class="fa-brands fa-instagram fa-2x"></i>
+                    <i class="fa-brands fa-reddit-alien fa-2x"></i>
+                    <i class="fa-brands fa-patreon fa-2x"></i>
+                </div>
+            </div>
+        </footer>
+    </body>
+
+</html>

@@ -1,0 +1,115 @@
+/* Author: Jesse Schröder */
+/* Assignment: WEBS1 Eindopracht */
+/* Date: 10-09-2022 */
+
+/* Set padding and margin to 0 */
+.pm0 {
+    padding: 0;
+    margin: 0;
+}
+
+/* Set padding to 0 */
+.pad0 {
+    padding: 0;
+}
+
+/* Set margin to 0 */
+.mar0 {
+    margin: 0;
+}
+
+/* Set width to 100% */
+.w100 {
+    width: 100%;
+}
+
+/* Set width to 100% */
+.w70 {
+    width: 70%;
+}
+
+/* Set width to 100% */
+.w30 {
+    width: 30%;
+}
+
+/* Set height to 100% */
+.h100 {
+    height: 100%;
+}
+
+/* Center things */
+.center {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+/* Center things with position */
+.centerP {
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* Set cursor to pointer */
+.pointer {
+    cursor: pointer;
+}
+
+/* Set position to fixed */
+.pFixed {
+    position: fixed;
+}
+
+/* Set position to fixed */
+.pAbsolute {
+    position: absolute;
+}
+
+/* Set display to flex */
+.dFlex {
+    display: flex;
+}
+
+/* Set display to none */
+.dNone {
+    display: none;
+}
+
+/* Set display to none */
+.bold {
+    font-weight: bold;
+}
+
+/* Give box-shadow to things */
+.boxS {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+}
+
+/* Set flex-direction to column */
+.fdColumn {
+    flex-direction: column;
+}
+
+/* Set justify-content to center */
+.jcCenter {
+    justify-content: center;
+}
+
+/* set flex-wrap to wrap */
+.wrap {
+    flex-wrap: wrap;
+}
+
+/* set text-align to center */
+.taCenter {
+    text-align: center;
+}
+
+/* set position to sticky */
+.pSticky {
+    position: sticky;
+    top: 20px;
+    z-index: 3;
+}

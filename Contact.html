@@ -1,0 +1,128 @@
+<!-- 
+    Author:         Jesse Schröder
+    Date:           19-09-2022
+    Description:    Eindopdracht Webs1
+-->
+<!DOCTYPE html>
+
+<html>
+
+    <head>
+       <meta charset="UTF-8">
+       <meta name="viewport" content="width=device-width, initial-scale=1.0">
+       <link href="src/style/style.css" rel="stylesheet" type="text/css">
+       <link href="src/style/basis.css" rel="stylesheet" type="text/css">
+       <script src="https://kit.fontawesome.com/5a6df5a6e9.js" crossorigin="anonymous"></script>
+       <title>Title</title>
+    </head>
+
+    <body>
+        <!-----  | Header |  ----->
+        <!-- Header banner -->
+        <img src="src/img/header-bg.png" alt="Header" class="w100 headerBanner">
+        <!-- Menu & Logo -->
+        <div class="menuLogo pFixed">
+            <label for="show">
+                <img src="src/img/menu_btn.png" alt="Menu" class="menu pointer">
+            </label>
+            <a href="index.html"><img src="src/img/logo.png" alt="Main Logo" class="logo pointer"></a>
+        </div>
+        <!-----  | Navigation |  ----->
+        <!-- Click -->
+        <input class="dNone" type="checkbox" id="show">
+        <!-- Menu & Invisible window container -->
+        <nav class="pFixed h100 w100 dFlex">
+            <!-- Menu -->
+            <ul class="mar0">
+                <li><a href="index.html" class="left">Home</a></li>
+                <li><a href="Story.html" class="left">Story</a></li>
+                <li><a href="Confidants.html" class="left">Confidants</a></li>
+                <li><a href="Palaces.html" class="left">Palaces</a></li>
+                <li><a href="Tokyo.html" class="left">Tokyo</a></li>
+                <li><a href="Contact.html" class="left">Contact</a></li>
+            </ul>
+            <!-- Menu close button -->
+            <label for="show">
+                <i class="fa-solid fa-xmark fa-3x pFixed"></i>
+            </label>
+            <!-- Invisible window -->
+            <label for="show" class="invisibleWindow pm0 w100 h100 pointer"></label>
+        </nav>
+        <!-----  | Structure |  ----->
+        <!-- Top of page button -->
+        <a href="#"><i class="fa-solid fa-circle-up fa-3x pFixed"></i></a>
+        <!-- Section Confidants -->
+        <section class="sectionColorB sectionTop">
+            <h1>Contact</h1>
+            <div class="contactContainer dFlex">
+                <!-- Form -->
+                <form class="w100">
+                  <h2>Ask us a question</h2>
+                  <label for="fname">Full Name</label>
+                  <input type="text" id="fname" name="firstname" placeholder="Your name..">
+                  <label for="email">Email</label>
+                  <input type="text" id="lname" name="lastname" placeholder="Your email..">
+                  <label for="country">Country</label>
+                  <select id="country" name="country">
+                    <option value="The Netherlands">The Netherlands</option>
+                    <option value="Belgium">Belgium</option>
+                    <option value="Germany">Germany</option>
+                    <option value="France">France</option>
+                    <option value="Switzerland">Switzerland</option>
+                  </select>
+                  <label for="subject">Subject</label>
+                  <textarea id="subject" name="subject" placeholder="Write something.."></textarea>
+                  <input type="submit" value="Submit" class="bold w100">
+                </form>
+                <!-- FAQ -->
+                <div class="faq w100">
+                    <h2>FAQ</h2>
+                    <ul>
+                        <li>Representationalism</i></li>
+                        <li>Flibbertigibbet</li>
+                        <li>Agglutination</li>
+                        <li>Yellowhammer</li>
+                        <li>Nucleomituphobia</li>
+                        <li>Thanatognomonic</li>
+                        <li>Xerophthalmia</li>
+                        <li>Representationalism</i></li>
+                        <li>Flibbertigibbet</li>
+                        <li>Agglutination</li>
+                        <li>Yellowhammer</li>
+                        <li>Nucleomituphobia</li>
+                        <li>Thanatognomonic</li>
+                        <li>Xerophthalmia</li>
+                        <li>Yellowhammer</li>
+                        <li>Nucleomituphobia</li>
+                        <li>Thanatognomonic</li>
+                        <li>Xerophthalmia</li>
+                    </ul>
+                </div>
+              </div>
+        </section>
+        <!-----  | Footer |  ----->
+        <footer class="dFlex">
+            <!-- Support email -->
+            <div>
+                <p class="mar0 bold">
+                    Support email
+                </p>
+                <p class="mar0">
+                    p5rguide_support@gmail.com
+                </p>
+            </div>
+            <!-- Social media -->
+            <div>
+                <p class="mar0 bold">Follow us</p>
+                <div>
+                    <i class="fa-brands fa-discord fa-2x"></i>
+                    <i class="fa-brands fa-twitter fa-2x"></i>
+                    <i class="fa-brands fa-instagram fa-2x"></i>
+                    <i class="fa-brands fa-reddit-alien fa-2x"></i>
+                    <i class="fa-brands fa-patreon fa-2x"></i>
+                </div>
+            </div>
+        </footer>
+    </body>
+
+</html>

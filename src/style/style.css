@@ -1,0 +1,707 @@
+/* Author: Jesse Schröder */
+/* Assignment: WEBS1 Eindopracht */
+/* Date: 10-09-2022 */
+
+html {
+    background: url(../img/Background.png) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    scroll-behavior: smooth;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+input, select, textarea, button {
+    font-family:inherit;
+}
+
+/* -----   Header   ----- */
+/* Header banner */
+.headerBanner {
+    height: 8em;
+    position: absolute;
+    top: 0;
+}
+
+/* -----   Menu   ----- */
+/* Logo */
+.logo {
+    width: 5%;
+    transition: 0.2s;
+}
+
+.logo:hover {
+    transform: rotate(0.5turn);
+}
+
+/* Menu */
+.menu {
+    width: 10%;
+    transition: 0.2s;
+}
+
+.menu:hover {
+    transform: scale(110%, 110%);
+}
+
+/* MenuLogo */
+.menuLogo {
+    top: 2%;
+    left: 5%;
+    z-index: 2;
+}
+
+/* Menu close button */
+.fa-xmark {
+    color: #FFFFFF;
+    top: 2%;
+    right: -100%;
+    display: none;
+}
+
+/* Menu en Invisible window */
+nav {
+    visibility: hidden;
+    top: 0;
+    z-index: 4;
+}
+
+nav ul {
+    padding: 2em;
+    background-color: #000000;
+    list-style: none;
+    border-right: 5px solid #FFFFFF;
+}
+
+.invisibleWindow {
+    background-color: #FFFFFF;
+    opacity: 0;
+}
+
+/* List in the nav */
+nav li {
+    padding: 1em 0em 1em 0em;
+}
+
+nav a {
+    text-decoration: none;
+    color: #FFFFFF;
+    font-size: 2em;
+}
+
+/* Click to disappear invisble window */
+#show:checked + nav {
+    visibility: visible;
+}
+
+#show:hover + nav {
+    opacity: 90%;
+    transition: 0.2s;
+}
+
+/* Menu list animation */
+nav a.left
+{
+    position: relative;
+}
+
+nav a.left:before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 3px;
+  bottom: 0;
+  left: 0;
+  background-color: #FF0000;
+  visibility: hidden;
+  transition: all 0.3s ease-in-out;
+}
+
+nav a.left:hover:before {
+    visibility: visible;
+    width: 100%;
+}
+
+/* -----   Structure   ----- */
+.fa-circle-up {
+    right: 5%;
+    color: #FFFFFF;
+    animation: moveArrow 2s infinite;
+    z-index: 4;
+}
+
+@keyframes moveArrow {
+    from {bottom: 5%;}
+    to {bottom: 7%}
+}
+
+.fa-circle-up:hover {
+    bottom: 5%;
+    animation: none;
+}
+
+/* Banner */
+.banner {
+    margin-bottom: 5em;
+    border-bottom: 10px solid #FFFFFF;
+}
+
+/* sections */
+section {
+    margin: 0% 20% 0% 20%;
+    padding: 2% 10% 2% 10%;
+    color: #FFFFFF;
+}
+
+section h1 {
+    text-align: center;
+    margin-top: 0;
+}
+
+.sectionColorA {
+    background-color: #202020;
+}
+
+.sectionColorB {
+    background-color: #2B2B2B;
+}
+
+.sectionTop {
+    margin-top: 5%;
+}
+
+.homeBorder {
+    border: 5px solid #FFFFFF;
+}
+
+/* Buttons */
+.button a {
+    background-color: #FF0000;
+    color: #FFFFFF;
+    border: 5px solid #FF0000;
+    text-decoration: none;
+    padding: 1em 0em 1em 0em;
+    width: 60%;
+    text-align: center;
+    margin: auto;
+}
+
+.button a:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    background-color: #FF0000;
+    color: #FFFFFF;
+    border: 5px solid #FFFFFF;
+}
+
+.button {
+    margin-top: 1em;
+}
+
+/* Confidants */
+.card {
+    width: 20%;
+    margin: 0em 1em 0em 1em;
+    background-color: #202020;
+}
+  
+.card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+  
+.cardContainer {
+    padding: 5% 10% 5% 10%;
+    background-color: #202020;
+}
+
+.confidantNav {
+    border-bottom: 10px solid #FFFFFF;
+}
+
+.cRed {
+    color: #FF0000;
+}
+
+section table {
+    width:100%;
+    table-layout: fixed;
+    overflow-wrap: break-word;
+    margin-bottom: 5em;
+}
+
+section table td {
+    vertical-align: baseline;
+}
+
+.responses table:last-child {
+    margin-bottom: 0;
+}
+
+.c100 {
+    width: 100px;
+}
+
+.confidantNav a {
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+/* Tokyo */
+.mapViewer {
+    height: 25em;
+}
+
+aside:nth-of-type(1) {
+    margin: 0% 5% 0% 0%;
+}
+
+aside:nth-of-type(2) {
+    margin: 0% 0% 0% 5%;
+}
+
+article {
+    padding: 5% 0% 5% 0%;
+    border-top: 5px solid #FFFFFF;
+    border-bottom: 5px solid #FFFFFF;
+}
+
+article:first-of-type {
+    border-top: 0;
+}
+
+article:nth-of-type(5), article:nth-of-type(6) {
+    border-bottom: 0;
+}
+
+article img:nth-child(1) {
+    margin-bottom: 1em;
+}
+
+article h3 {
+    margin-top: 0;
+}
+
+/* Palaces */
+#ShowKamoshida:checked + .boss {
+    top: 270px;
+}
+
+#ShowNiijima:checked + .boss {
+    top: 270px;
+}
+
+#ShowShido:checked + .boss {
+    top: 270px;
+}
+
+#ShowMaruki:checked + .boss {
+    top: 270px;
+}
+
+.palaceContainer img {
+    width: 90%;
+}
+
+.palaceContainer {
+    position: relative;
+    top: 0;
+    margin-bottom: 5em;
+}
+
+.palaceContainer p {
+    text-align: left;
+    padding: 0% 5% 0% 5%;
+}
+
+.palace {
+    position: relative;
+    top: 0;
+    border: 5px solid #FFFFFF;
+    cursor: pointer;
+}
+
+.palace:hover {
+    border: 5px solid #FF0000;
+}
+
+.boss {
+    position: absolute;
+    top: 0;
+    transition: 0.5s;
+    border: 5px solid #FFFFFF;
+}
+
+/* Palaces */
+.contactContainer ul li {
+    font-size: 20pt;
+}
+
+.contactContainer h2 {
+    text-align: center;
+}
+
+.contactContainer div {
+    padding: 0% 0% 0% 5%;
+}
+
+form {
+    padding: 0% 5% 0% 0%;
+}
+
+
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+}
+  
+input[type=submit] {
+    background-color: #FF0000;
+    color: #FFFFFF;
+    border: 5px solid #FF0000;
+    padding: 1em 0em 1em 0em;
+    cursor: pointer;
+}
+  
+input[type=submit]:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    background-color: #FF0000;
+    color: #FFFFFF;
+    border: 5px solid #FFFFFF;
+}
+
+/* Story */
+.gameInfo {
+    border: 5px solid #FFFFFF;
+}
+
+.gameInfo table {
+    border-bottom: 5px solid #FFFFFF;
+    margin-bottom: 0;
+}
+
+.gameInfo td, .gameInfo th {
+    background-color: #2B2B2B;
+}
+
+.gameInfo a {
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+.trending {
+    height: 4em;
+    border: 5px solid #202020;
+    background-color: #2B2B2B;
+    padding: 0% 5% 0% 5%;
+    transition: 0.2s;
+    cursor: pointer;
+}
+
+.trending:hover {
+    padding-left: 10%;
+}
+
+/* -----   Footer   ----- */
+/* footer */
+footer {
+    padding: 5% 20% 5% 20%;
+    color: #FFFFFF;
+    background-color: #000000;
+    justify-content: space-around;
+    bottom: 0;
+    margin-top: 5em;
+    margin-bottom: 2em;
+    border-top: 10px solid #FFFFFF;
+    border-bottom: 10px solid #FFFFFF;
+}
+
+footer i:hover {
+    color: #FF0000;
+}
+
+footer i:nth-child(even):hover {
+    transform: skew(30deg, 20deg);
+}
+
+footer i:nth-child(odd):hover {
+    transform: skew(-30deg, -20deg);
+}
+
+/* -----   Laptop fix   ----- */
+@media only screen and (max-width: 1600px) {
+    /* -----   Structure   ----- */
+    /* Confidants */
+    .cardGroup {
+        flex-wrap: wrap;
+    }
+}
+
+/* -----   Responsive max-width: 1024px - Nest Hub   ----- */
+@media only screen and (max-width: 1024px) {
+    html {
+        background: #2B2B2B;
+    }
+
+    /* -----   Header   ----- */
+    /* Header banner */
+    .headerBanner {
+        height: 6em;
+    }
+
+    /* -----   Menu   ----- */
+    /* Logo */
+    .logo {
+        width: 8%;
+    }
+
+    /* Menu */
+    .menu {
+        width: 15%;
+    }
+    
+    /* -----   Structure   ----- */
+    /* Banner */
+    .banner {
+        margin-bottom: 0;
+        border-bottom: 0;
+    }
+
+    /* sections */
+    section {
+        padding: 5% 10% 5% 10%;
+        margin: 0% 0% 0% 0%;
+    }
+
+    /* Confidants */
+    .cardNone {
+        display: none;
+    }
+
+    .cardGroup {
+        flex-wrap: wrap;
+    }
+
+    .card {
+        margin: 1em 1em 1em 1em;
+    }
+
+    /* Tokyo */
+    .mapViewer {
+        height: 15em;
+    }
+
+    /* Palaces */
+    #ShowKamoshida:checked + .boss {
+        top: 220px;
+    }
+
+    #ShowNiijima:checked + .boss {
+        top: 220px;
+    }
+
+    #ShowShido:checked + .boss {
+        top: 220px;
+    }
+
+    #ShowMaruki:checked + .boss {
+        top: 220px;
+    }
+
+    /* -----   Footer   ----- */
+    /* footer */
+    footer {
+        margin: 0;
+        border-bottom: 0;
+    }
+}
+
+/* -----   Responsive max-width: 390px - iPhone 12 Pro (set to 400px for laptop fix)  ----- */
+@media only screen and (max-width: 400px) {
+    /* -----   Header   ----- */
+    /* Header banner */
+    .headerBanner {
+        height: 4em;
+        position: absolute;
+        top: 0;
+    }
+
+    /* -----   Menu   ----- */
+    /* Logo */
+    .logo {
+        width: 15%;
+    }
+
+    /* Menu */
+    .menu {
+        width: 30%;
+    }
+
+    /* MenuLogo */
+    .menuLogo {
+        top: 1%;
+    }
+
+    /* Menu en Invisible window - Remove the invisible window */
+    label.invisibleWindow {
+        display: none;
+    }
+
+    nav ul {
+        width: 100%;
+        border-right: 0;
+    }
+
+    /* Click to disappear invisble window - Don't change the opacity */
+    #show:hover + label {
+        opacity: 100%;
+    }
+
+    /* Menu close button */
+    .fa-xmark {
+        display: block;
+        right: 5%;
+    }
+
+    /* List in the nav */
+    nav li {
+        text-align: center;
+    }
+
+    nav a {
+        border-bottom: 2px solid #FF0000;
+    }
+
+    /* -----   Structure   ----- */
+    /* Confidants */
+    .card {
+        width: 50%;
+        margin: 0;
+    }
+
+    /* Buttons */
+    .button a {
+        padding: 2% 0% 2% 0%;
+        width: 100%;
+    }
+
+    /* sections */
+    section h1 {
+        margin-top: 0;
+    }
+    .sectionTop h1 {
+        margin-top: 15%;
+    }
+
+    .responses {
+        padding: 10% 10px 10% 10px;
+    }
+
+    .homeBorder {
+        border: 0;
+    }
+
+    /* Tokyo */
+    article {
+        flex-direction: column;
+    }
+
+    article:nth-of-type(2), article:nth-of-type(5) {
+        display: none;
+    }
+
+    article.dNone {
+        display: block;
+    }
+
+    article p:last-child {
+        margin-bottom: 0;
+    }
+
+    aside:nth-of-type(1) {
+        margin: 0;
+    }
+
+    aside:nth-of-type(2) {
+        margin: 0;
+    }
+
+    article h3 {
+        margin-top: 1em;
+    }
+
+    .mapViewer {
+        height: 10em;
+    }
+    
+    /* Palaces */
+    .palaceGroup {
+        flex-direction: column;
+    }
+
+    #ShowKamoshida:checked + .boss {
+        top: 170px;
+    }
+
+    #ShowNiijima:checked + .boss {
+        top: 170px;
+    }
+
+    #ShowShido:checked + .boss {
+        top: 170px;
+    }
+
+    #ShowMaruki:checked + .boss {
+        top: 170px;
+    }
+
+    /* Contact */
+    .contactContainer {
+        flex-direction: column;
+    }
+
+    .contactContainer div {
+        padding: 0;
+    }
+
+    form {
+        padding: 0;
+    }
+
+    .faq {
+        margin-top: 5em;
+    }
+    
+    /* Story */
+    .storyPage {
+        flex-direction: column;
+    }
+
+    .storyPage aside {
+        width: 100%;
+    }
+
+    .storyPage aside:nth-child(2) {
+        margin: 5% 0% 5% 0%;
+    }
+
+    /* -----   Footer   ----- */
+    /* footer */
+    footer {
+        flex-direction: column;
+    }
+
+    footer > div {
+        margin: 5px 0px 5px 0px;
+    }
+}
+

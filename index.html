@@ -1,0 +1,142 @@
+<!-- 
+    Author:         Jesse Schröder
+    Date:           19-09-2022
+    Description:    Eindopdracht Webs1
+-->
+ <!DOCTYPE html>
+
+ <html>
+
+     <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="src/style/style.css" rel="stylesheet" type="text/css">
+        <link href="src/style/basis.css" rel="stylesheet" type="text/css">
+        <script src="https://kit.fontawesome.com/5a6df5a6e9.js" crossorigin="anonymous"></script>
+        <title>Title</title>
+     </head>
+
+     <body>
+        <!-----  | Header |  ----->
+        <!-- Header banner -->
+        <img src="src/img/header-bg.png" alt="Header" class="w100 headerBanner">
+        <!-- Menu & Logo -->
+        <div class="menuLogo pFixed">
+            <label for="show">
+                <img src="src/img/menu_btn.png" alt="Menu" class="menu pointer">
+            </label>
+            <a href="index.html"><img src="src/img/logo.png" alt="Main Logo" class="logo pointer"></a>
+        </div>
+        <!-----  | Navigation |  ----->
+        <!-- Click -->
+        <input class="dNone" type="checkbox" id="show">
+        <!-- Menu & Invisible window container -->
+        <nav class="pFixed h100 w100 dFlex">
+            <!-- Menu -->
+            <ul class="mar0">
+                <li><a href="index.html" class="left">Home</a></li>
+                <li><a href="Story.html" class="left">Story</a></li>
+                <li><a href="Confidants.html" class="left">Confidants</a></li>
+                <li><a href="Palaces.html" class="left">Palaces</a></li>
+                <li><a href="Tokyo.html" class="left">Tokyo</a></li>
+                <li><a href="Contact.html" class="left">Contact</a></li>
+            </ul>
+            <!-- Menu close button -->
+            <label for="show">
+                <i class="fa-solid fa-xmark fa-3x pFixed"></i>
+            </label>
+            <!-- Invisible window -->
+            <label for="show" class="invisibleWindow pm0 w100 h100 pointer"></label>
+        </nav>
+        <!-----  | Structure |  ----->
+        <!-- Banner -->
+        <img src="src/img/Banner.jpg" alt="Banner" class="banner w100">
+        <!-- Top of page button -->
+        <a href="#"><i class="fa-solid fa-circle-up fa-3x pFixed"></i></a>
+        <!-- Section Confidants -->
+        <!-- Section Story -->
+        <section class="sectionColorB">
+            <h1>Story</h1>
+            <p>
+                The main theme of Persona 5 is freedom, anger and breaking free from slavery, to corrupted adults from the school, prestige class, gang, corporation, government and politics. Persona 5 discusses the hardships of modern-day 21st century society and features characters that are restrained by the rules set by this society, especially in Japan where the game is set. This freedom is meant to liberate those who "are bored and discontent with their lives. Persona 5 was made to be an emotional experience that stirs up its audience and finally lets them go with a strong sense of catharsis.
+            </p>
+            <p>
+                A major theme is that the protagonist and the Phantom Thieves are working to defeat the Seven Deadly Sins that humanity is attached to, such as lust, greed, pride, etc; the protagonist is called the savior of humanity, and defeating these vices is essential to overcoming the enslaved mindset and condition of humanity.
+            </p>
+            <!-- Link buttons -->
+            <div class="button dFlex">
+                <a href="Story.html" class="boxS">More</a>
+            </div>
+        </section>
+        <section class="sectionColorA">
+            <h1>Confidants</h1>
+            <!-- Cards -->
+            <div class="jcCenter dFlex">
+                <div class="card boxS">
+                    <img src="src/img/Faith-Card.jpg" alt="Avatar" class="w100">
+                    <div class="cardContainer">
+                      <h4>Kasumi Yoshizawa</h4> 
+                    </div>
+                </div>
+                <div class="card boxS">
+                    <img src="src/img/Justice-Card.jpg" alt="Avatar" class="w100">
+                    <div class="cardContainer">
+                      <h4>Goro Akechi</h4> 
+                    </div>
+                </div>
+                <div class="card boxS cardNone">
+                    <img src="src/img/Chariot-Card.jpg" alt="Avatar" class="w100">
+                    <div class="cardContainer">
+                      <h4>Ryuji Sakamoto</h4> 
+                    </div>
+                </div>
+            </div>
+            <!-- Link buttons -->
+            <div class="button dFlex">
+                <a href="Confidants.html" class="boxS">More</a>
+            </div> 
+        </section>
+        <!-- Section Palaces -->
+        <section class="sectionColorB">
+            <h1>Palaces</h1>
+            <img src="src/img/MetaverseApp.webp" alt="Metaverse" class="w100 homeBorder">
+            <!-- Link buttons -->
+            <div class="button dFlex">
+                <a href="Palaces.html" class="boxS">More</a>
+            </div>
+        </section>
+        <!-- Section Tokyo -->
+        <section class="sectionColorA">
+            <h1>Tokyo</h1>
+            <img src="src/img/Tokyo.jpg" alt="Tokyo" class="w100 homeBorder">
+            <!-- Link buttons -->
+            <div class="button dFlex">
+                <a href="Tokyo.html" class="boxS">More</a>
+            </div>
+        </section>
+        <!-----  | Footer |  ----->
+        <footer class="dFlex">
+            <!-- Support email -->
+            <div>
+                <p class="mar0 bold">
+                    Support email
+                </p>
+                <p class="mar0">
+                    p5rguide_support@gmail.com
+                </p>
+            </div>
+            <!-- Social media -->
+            <div>
+                <p class="mar0 bold">Follow us</p>
+                <div>
+                    <i class="fa-brands fa-discord fa-2x"></i>
+                    <i class="fa-brands fa-twitter fa-2x"></i>
+                    <i class="fa-brands fa-instagram fa-2x"></i>
+                    <i class="fa-brands fa-reddit-alien fa-2x"></i>
+                    <i class="fa-brands fa-patreon fa-2x"></i>
+                </div>
+            </div>
+        </footer>
+     </body>
+
+</html>
